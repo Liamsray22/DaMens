@@ -13,11 +13,13 @@ var events = [
 //   });
 // });
 
-$.getJSON("/test.json", function(data) {
+$.getJSON("./test.json", function(data) {
     $.each(data["events"], function(idx,events) {
-        alert("Prime number: " + Data.parse(events.fecha));
+        console.log("Prime number: " + Data.parse(events.fecha));
     });
 });
+
+
 
 var settings = {};
 var element = document.getElementById('caleandar');
