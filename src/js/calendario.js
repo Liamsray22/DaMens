@@ -5,21 +5,19 @@ var events = [
 ]; //Eventos de ejemplo
 
 
-$.getJSON("/test.json", function(json) {
-  console.log(json); // this will show the info it in firebug console
-  array.forEach(json => {
-    alert(Date.parse(json.fecha));
-    // events.push({'Date': new Date(Date.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
-  });
-});
-
-// function read_json() {
-//   $.getJSON("/test.json", function(data) {
-//       $.each(data["events"], function(idx,events) {
-//           alert("Prime number: " + Data.parse(events.fecha));
-//       });
+// $.getJSON("/test.json", function(json) {
+//   console.log(json); // this will show the info it in firebug console
+//   array.forEach(json => {
+//     alert(Date.parse(json.fecha));
+//     // events.push({'Date': new Date(Date.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
 //   });
-// }
+// });
+
+$.getJSON("/test.json", function(data) {
+    $.each(data["events"], function(idx,events) {
+        alert("Prime number: " + Data.parse(events.fecha));
+    });
+});
 
 var settings = {};
 var element = document.getElementById('caleandar');
