@@ -5,11 +5,11 @@ var events = [
 ]; //Eventos de ejemplo
 
 
-var jsondata = $.getJSON("/test.json", function(json) {
+$.getJSON("/test.json", function(json) {
   console.log(json); // this will show the info it in firebug console
   array.forEach(json => {
     console.log(Date.parse(json.fecha))
-    events.push({'Date': new Date(Date.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
+    // events.push({'Date': new Date(Date.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
   });
 });
 
