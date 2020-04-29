@@ -8,7 +8,7 @@ var events = [
 $.getJSON("/test.json", function(json) {
   console.log(json); // this will show the info it in firebug console
   array.forEach(json => {
-    console.log(Date.parse(json.fecha))
+    alert(Date.parse(json.fecha));
     // events.push({'Date': new Date(Date.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
   });
 });
