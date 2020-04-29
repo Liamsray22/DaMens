@@ -5,7 +5,7 @@ var events = [
 ]; //Eventos de ejemplo
 
 
-// var json = $.getJSON("test.json", function(json) {
+// var json = $.getJSON("/test.json", function(json) {
 //   console.log(json); // this will show the info it in firebug console
 //   array.forEach(json => {
 //     console.log(Date.parse(json.fecha))
@@ -16,7 +16,7 @@ var events = [
 function read_json() {
   $.getJSON("/test.json", function(data) {
       $.each(data["events"], function(idx,events) {
-          alert("Prime number: " + events.fecha);
+          alert("Prime number: " + Data.parse(events.fecha));
       });
   });
 }
