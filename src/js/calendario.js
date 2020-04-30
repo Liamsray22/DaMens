@@ -5,7 +5,7 @@ var events = [
 ]; //Eventos de ejemplo
 
 fetch("./test.json")
-      .then(results => results.json())
+      .then(results => JSON.parse(results))
       .then(console.log);
 
 
