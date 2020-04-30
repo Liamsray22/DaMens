@@ -4,18 +4,14 @@ var events = [
   {'Date': new Date(2016, 6, 27), 'Title': '25 year anniversary', 'Link': 'https://www.google.com.au/#q=anniversary+gifts'},
 ]; //Eventos de ejemplo
 
-fetch("./test.json")
-      .then(results => results.json)
-      .then(console.log(results["events"]));
 
-
-// $.getJSON("/test.json", function(json) {
-//   console.log(json); // this will show the info it in firebug console
-//   array.forEach(json => {
-//     alert(Date.parse(json.fecha));
-//     events.push({'Date': new Date(Date.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
-//   });
-// });
+$.getJSON("./test.json", function(json) {
+  console.log(json); // this will show the info it in firebug console
+  array.forEach(data => {
+    alert(JSON.parse(data["events"]));
+    events.push({'Date': new Date(JSON.parse(data["events"])), 'Title': 'Hice mis ejercicios!'})
+  });
+});
 
 // $.getJSON("./test.json", function(data) {
 //     $.each(data["events"], function(idx,events) {
