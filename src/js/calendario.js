@@ -4,14 +4,16 @@ var events = [
   {'Date': new Date(2016, 6, 27), 'Title': '25 year anniversary', 'Link': 'https://www.google.com.au/#q=anniversary+gifts'},
 ]; //Eventos de ejemplo
 
+datos = JSON.parse(localStorage.getItem("test"))
+console.log(datos)
 
-$.getJSON("./test.json", function(json) {
-  console.log(json); // this will show the info it in firebug console
-  array.forEach(data => {
-    alert(JSON.parse(data["events"]));
-    events.push({'Date': new Date(JSON.parse(data["events"])), 'Title': 'Hice mis ejercicios!'})
-  });
-});
+// $.getJSON("./test.json", function(json) {
+//   console.log(json); // this will show the info it in firebug console
+//   array.forEach(data => {
+//     alert(JSON.parse(data["events"]));
+//     events.push({'Date': new Date(JSON.parse(data["events"])), 'Title': 'Hice mis ejercicios!'})
+//   });
+// });
 
 // $.getJSON("./test.json", function(data) {
 //     $.each(data["events"], function(idx,events) {
