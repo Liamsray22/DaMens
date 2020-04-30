@@ -6,7 +6,7 @@ var events = [
 
 $.getJSON("./test.json", function(json){
   console.log("toy pila de jalto")
-  console.log(json["events"].fecha)
+  console.log(json)
   array.forEach(json => {
     
     events.push({'Date': new Date(JSON.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
