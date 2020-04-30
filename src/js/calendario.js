@@ -13,13 +13,12 @@ $.getJSON("./test.json", function(json){
   // });
   console.log(events)
   console.log("Funciona?")
-  var settings = {};
-  var element = document.getElementById('caleandar');
-  caleandar(element, events, settings);
 });
 // datos = JSON.parse(localStorage.getItem("./test.json"))
 console.log("toy jalto")
-// console.log(datos)
+var settings = {};
+var element = document.getElementById('caleandar');
+caleandar(element, events, settings);
 
 // $.getJSON("./test.json", function(json) {
 //   console.log(json); // this will show the info it in firebug console
