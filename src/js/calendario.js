@@ -15,7 +15,9 @@ var events = [
 
 $.getJSON("./test.json", function(data) {
     $.each(data["events"], function(idx,events) {
-        console.log("Prime number: " + Data.parse(events.fecha));
+      var date = JSON.parse(events);
+      console.log("Prime number: " + date);
+      events.push({'Date': new Date(date), 'Title': 'Hice mis ejercicios!'});
     });
 });
 
