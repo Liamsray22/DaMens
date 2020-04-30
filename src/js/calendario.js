@@ -11,6 +11,8 @@ $.getJSON("./test.json", function(json){
     
     events.push({'Date': new Date(JSON.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
   });
+  console.log(event)
+  console.log("Funciona?")
   var settings = {};
   var element = document.getElementById('caleandar');
   caleandar(element, events, settings);
