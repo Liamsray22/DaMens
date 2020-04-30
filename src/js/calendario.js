@@ -6,7 +6,7 @@ var events = [
 
 $.getJSON("./test.json", function(json){
   console.log("toy pila de jalto")
-  console.log(json)
+  console.log(json["events"])
   events.push({'Date': new Date(JSON.parse(json["events"])), 'Title': 'Hice mis ejercicios!'})
   var settings = {};
   var element = document.getElementById('caleandar');
