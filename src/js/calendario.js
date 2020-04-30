@@ -6,7 +6,7 @@ var events = [
 
 data = JSON.parse(localStorage.getItem("test.json"))
 console.log("toy jalto")
-console.log(data["events"].fecha)
+console.log(data["events"])
 
 // $.getJSON("./test.json", function(json) {
 //   console.log(json); // this will show the info it in firebug console
