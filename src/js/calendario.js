@@ -1,12 +1,14 @@
-var events = [
-  {'Date': new Date(2020, 0, 28), 'Title': 'Esto funciona!'},
-  {'Date': new Date(2016, 6, 18), 'Title': 'New Garfield movie comes out!'},
-  {'Date': new Date(2016, 6, 27), 'Title': '25 year anniversary'},
-]; //Eventos de ejemplo
 
 $.getJSON("./test.json", function(json){
+  var events = [
+    {'Date': new Date(2020, 0, 28), 'Title': 'Esto funciona!'},
+    {'Date': new Date(2016, 6, 18), 'Title': 'New Garfield movie comes out!'},
+    {'Date': new Date(2016, 6, 27), 'Title': '25 year anniversary'},
+  ]; //Eventos de ejemplo
+
   console.log("toy pila de jalto")
-  console.log(json[0].fecha)
+  console.log(json)
+
   for (let i = 0; i < json.length; i++) {
     events.concat({'Date': new Date(JSON.parse(json[i].fecha)), 'Title': 'Hice mis ejercicios!'})
 
