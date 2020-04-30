@@ -9,8 +9,8 @@ $.getJSON("./test.json", function(json){
   console.log("toy pila de jalto")
   console.log(json)
 
-  for (let i = 0; i < json.length; i++) {
-    events.concat({'Date': new Date(JSON.parse(json[i].fecha)), 'Title': 'Hice mis ejercicios!'})
+  for (var i = 0; i < json.length; i++) {
+    events.push({'Date': new Date(JSON.parse(json[i].fecha)), 'Title': 'Hice mis ejercicios!'});
 
   }
   
