@@ -7,10 +7,10 @@ $.getJSON("./test.json", function(json){
     {'Date': new Date(2016, 6, 27), 'Title': '25 year anniversary'},
   ]; //Eventos de ejemplo
   console.log("toy pila de jalto")
-  console.log(json[1].fecha)
+  console.log(json[1])
 
   for (var i = 0; i < json.length; i++) {
-    events.push({'Date': new Date(JSON.parse(json[i].fecha)), 'Title': 'Hice mis ejercicios!'},);
+    events.push({'Date': new Date(2020,0, i), 'Title': 'Hice mis ejercicios!'},);
 
   }
   
