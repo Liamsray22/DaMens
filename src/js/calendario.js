@@ -7,6 +7,10 @@ var events = [
 $.getJSON("./test.json", function(json){
   console.log("toy pila de jalto")
   console.log(json)
+  events.push({'Date': new Date(JSON.parse(json["events"])), 'Title': 'Hice mis ejercicios!'})
+  var settings = {};
+  var element = document.getElementById('caleandar');
+  caleandar(element, events, settings);
 });
 // datos = JSON.parse(localStorage.getItem("./test.json"))
 console.log("toy jalto")
@@ -27,9 +31,3 @@ console.log("toy jalto")
 //       events.push({'Date': new Date(date), 'Title': 'Hice mis ejercicios!'});
 //     });
 // });
-
-
-
-var settings = {};
-var element = document.getElementById('caleandar');
-caleandar(element, events, settings);
