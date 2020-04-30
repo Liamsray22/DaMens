@@ -7,10 +7,10 @@ var events = [
 $.getJSON("./test.json", function(json){
   console.log("toy pila de jalto")
   console.log(json)
-  array.forEach(json => {
+  // array.forEach(json => {
     
-    events.push({'Date': new Date(JSON.parse(json.fecha)), 'Title': 'Hice mis ejercicios!'})
-  });
+  //   events.push({'Date': new Date(JSON.parse(json)), 'Title': 'Hice mis ejercicios!'})
+  // });
   console.log(event)
   console.log("Funciona?")
   var settings = {};
