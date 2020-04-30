@@ -7,14 +7,14 @@ var events = [
 $.getJSON("./test.json", function(json){
   
   console.log("toy pila de jalto")
-  console.log(json[1])
+  console.log(json)
 
   for (var i = 0; i < json.length; i++) {
     events.push({'Date': new Date(2020,0, i), 'Title': 'Hice mis ejercicios!'},);
+    console.log(events)
 
   }
   
-  console.log(events)
   console.log("Funciona?")
   var settings = {};
   var element = document.getElementById('caleandar');
