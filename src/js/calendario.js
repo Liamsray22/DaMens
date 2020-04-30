@@ -5,8 +5,8 @@ var events = [
 ]; //Eventos de ejemplo
 
 fetch("./test.json")
-      .then(results => JSON.parse(results))
-      .then(console.log);
+      .then(results => results.json)
+      .then(console.log(results["events"]));
 
 
 // $.getJSON("/test.json", function(json) {
