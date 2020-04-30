@@ -4,8 +4,9 @@ var events = [
   {'Date': new Date(2016, 6, 27), 'Title': '25 year anniversary', 'Link': 'https://www.google.com.au/#q=anniversary+gifts'},
 ]; //Eventos de ejemplo
 
-datos = JSON.parse(localStorage.getItem("test.json"))
-console.log(datos)
+data = JSON.parse(localStorage.getItem("test.json"))
+console.log("toy jalto")
+console.log(datos["events"])
 
 // $.getJSON("./test.json", function(json) {
 //   console.log(json); // this will show the info it in firebug console
